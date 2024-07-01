@@ -22,7 +22,7 @@ app.use("/", authRoutes);
 app.use("/games", gameRoutes);
 
 //Routes
-app.get("/", (req, res) => res.send("Response from server"));
+app.get("/", (req, res) => {console.log(Date.now()); return res.send("Response from server"))};
 
 //Connect to MongoDB database
 mongoose
