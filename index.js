@@ -23,8 +23,8 @@ app.use("/games", gameRoutes);
 
 //Routes
 app.get("/", (req, res) => {
-  console.log(Date.now());
-  return res.send("Response from server");
+  
+  return res.status(200).send("Response from server");
 });
 
 //Connect to MongoDB database
